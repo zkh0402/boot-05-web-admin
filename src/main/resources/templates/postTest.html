@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <form th:action="@{/saveCity}" method="post">
-        <input type="text" name="name" value="xxx">
-        <input type="text" name="state" value="xxx">
-        <input type="text" name="country" value="xxx">
-        <input type="submit" name="提交">
-    </form>
+<form th:action="@{saveCity}" method="post">
+    <input type="text" name="name" value="xxx">
+    <input type="text" name="state" value="xxx">
+    <input type="text" name="country" value="xxx">
+    <input type="submit" value="提交">
+</form>
+
 </body>
 </html>

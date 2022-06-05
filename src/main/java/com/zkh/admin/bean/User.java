@@ -7,10 +7,9 @@ import lombok.Data;
  * @date 2022/6/5 -17:44
  */
 @Data
-public class City {
+public class User {
     private Long id;
     private String name;
-    private String state;
-    private String country;
-
+    private Integer age;
+    private String email;
 }

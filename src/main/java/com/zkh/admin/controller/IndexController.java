@@ -9,7 +9,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 
@@ -43,10 +46,10 @@ public class IndexController {
         cityService.insertCity(city);
         return city;
     }
-
+")
     //测试mybatis注解版，没有xml文件
     @ResponseBody
-    @GetMapping("/city")
+    @GetMapping("/city
     public City selectCityById(@RequestParam("id") Long id){
         return cityService.selectCityById(id);
     }

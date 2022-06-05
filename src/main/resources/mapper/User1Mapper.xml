@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zkh.admin.Mapper.User1Mapper">
-    <!--public User1 selectUserByUserName(@Param("userName") String userName);-->
+    <!--public User1 selectUser1ByUserName(@Param("userName") String userName);-->
     <select id="selectUser1ByUserName" resultType="com.zkh.admin.bean.User1">
         select * from user1 where username=#{username}
     </select>

@@ -1,6 +1,5 @@
 package com.zkh.admin.controller;
 
-
 import com.zkh.admin.bean.User1;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.Arrays;
 import java.util.List;
-
 
 /**
  * @author zkh
@@ -19,7 +17,7 @@ public class TableController {
 
     @GetMapping("/basic_table")
     public String basic_table(){
-        //int i =10/0;
+        int i =10/0;
         return "/table/basic_table";
     }
 

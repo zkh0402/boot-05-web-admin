@@ -6,11 +6,10 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author zkh
- * @date 2022/6/4 -10:00
+ * @date 2022/6/5 -17:44
  */
-
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
 public class User1 {
     private String username;
